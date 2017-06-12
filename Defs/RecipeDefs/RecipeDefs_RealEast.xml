@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RecipeDefs>
+
+   <!-- =============AK74============== -->
+
+   <RecipeDef>
+    <defName>Gun_ak74_cwm</defName>
+    <label>Make AK74</label>
+    <description>Make AK74.</description>
+    <jobString>Making AK74</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>	
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>41000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_ak74_cwm>1</Gun_ak74_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>60</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>30</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>WoodLog</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>8</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============AKS74============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_aks74_cwm</defName>
+    <label>Make AKS74</label>
+    <description>Make AKS74.</description>
+    <jobString>Making AKS74</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>	
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>41000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_aks74_cwm>1</Gun_aks74_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>65</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>8</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============RPK74============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_rpk74_cwm</defName>
+    <label>Make RPK74</label>
+    <description>Make RPK74.</description>
+    <jobString>Making RPK74</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>45000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_rpk74_cwm>1</Gun_rpk74_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>75</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>30</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>WoodLog</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>9</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============AKS74u============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_aks74u_cwm</defName>
+    <label>Make AKS74u</label>
+    <description>Make AKS74u.</description>
+    <jobString>Making AKS74u</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>35000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_aks74u_cwm>1</Gun_aks74u_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>55</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>15</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>WoodLog</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>6</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============AKM============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_akm_cwm</defName>
+    <label>Make AKM</label>
+    <description>Make AKM.</description>
+    <jobString>Making AKM</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>38000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_akm_cwm>1</Gun_akm_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>70</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>30</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+		    <li>WoodLog</li>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>9</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+   
+   <!-- =============AKMS============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_aks_cwm</defName>
+    <label>Make AKMS</label>
+    <description>Make AKMS.</description>
+    <jobString>Making AKMS</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>38000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_aks_cwm>1</Gun_aks_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>75</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+		    <li>WoodLog</li>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>9</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+   
+   <!-- =============SKS============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_sks_cwm</defName>
+    <label>Make SKS</label>
+    <description>Make SKS.</description>
+    <jobString>Making SKS</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>40000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_sks_cwm>1</Gun_sks_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>75</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>9</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+   
+  
+</RecipeDefs>

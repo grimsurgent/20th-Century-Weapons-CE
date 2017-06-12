@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+   <ThingDef Name="BaseGunWWII" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicData>
+		  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <DeteriorationRate>1</DeteriorationRate>
+		  <SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+		  <li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li>
+			<compClass>CompEquippable</compClass>
+		  </li>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>ArtName_WeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+	  </ThingDef>
+
+	  <ThingDef Name="BaseMakeableGunWWII" ParentName="BaseGunWWII" Abstract="True">
+		<recipeMaker>
+		  <workSpeedStat>SmithingSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>TableMachining</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	  </ThingDef>
+
+
+	  <ThingDef Name="BaseHumanGunWWII" ParentName="BaseGunWWII" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+	  
+	  <ThingDef Name="BaseHumanMakeableGunWWII" ParentName="BaseMakeableGunWWII" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+	  
+   <!-- ==================== Mosin–Nagant ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_mosin_cwm</defName>
+    <label>Mosin–Nagant</label>
+    <description>The Mosin–Nagant is a five-shot, bolt-action, internal magazine-fed, military rifle, developed by the Imperial Russian Army in 1882–91, and used by the armed forces of the Russian Empire, the Soviet Union and various other nations.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_mosin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <SightsEfficiency>0.84</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>2.73</SwayFactor>
+      <Bulk>13.06</Bulk>
+      <Mass>4.5</Mass>
+      <RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>40</Steel>
+	  <WoodLog>20</WoodLog>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+                <warmupTime>0.5</warmupTime>
+                <range>80</range>
+                <soundCast>Shotmosin</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>5</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x54mmR</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+ 
+   <!-- =============PPSH============== -->
+   
+   <ThingDef ParentName="BaseHumanGunWWII">
+    <defName>Gun_ppsh_cwm</defName>
+    <label>PPSH</label>
+    <description>The PPSh-41 is a Soviet submachine gun designed by Georgi Shpagin as a cheap, reliable, and simplified alternative to the PPD-40. Common nicknames are "pe-pe-sha" from its three-letter prefix and "papasha", meaning "daddy".</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_ppsh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <SightsEfficiency>0.35</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>1.37</SwayFactor>
+      <Bulk>4.2</Bulk>
+      <Mass>3.5</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>pdw</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.30</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x25mmTokarev_FMJ</projectileDef>
+				<burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <warmupTime>0.8</warmupTime>
+                <range>38</range>
+                <soundCast>Shotppsh</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>7</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>71</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x25mmTokarev</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>4</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- =============M1928A1============== -->
+   
+   <ThingDef ParentName="BaseHumanGunWWII">
+    <defName>Gun_tompson_cwm</defName>
+    <label>M1928A1</label>
+    <description>The Thompson submachine gun is an American submachine gun, invented by John T. Thompson in 1918, that became infamous during the Prohibition era. It was a common sight in the media of the time, being used by both law enforcement officers and criminals.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_tompson</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+   <statBases>
+      <MarketValue>450</MarketValue>
+      <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.16</ShotSpread>
+      <SwayFactor>1.37</SwayFactor>
+      <Bulk>4.20</Bulk>
+      <Mass>3.57</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>pistols</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.30</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_45ACP_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>0.8</warmupTime>
+                <range>38</range>
+                <soundCast>Shottompson</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>7</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_45ACP</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- =============MP 40============== -->
+   
+   <ThingDef ParentName="BaseHumanGunWWII">
+    <defName>Gun_mp40_cwm</defName>
+    <label>MP 40</label>
+    <description>The MP 40 was a submachine gun chambered for the 9×19mm Parabellum cartridge. It was developed in Nazi Germany and used extensively by the Axis powers during World War II.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_mp40</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+     <statBases>
+      <MarketValue>450</MarketValue>
+      <SightsEfficiency>0.35</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>1.37</SwayFactor>
+      <Bulk>4.20</Bulk>
+      <Mass>3.57</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>pdw</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.25</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>0.8</warmupTime>
+                <range>38</range>
+                <soundCast>Shotmp40</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>7</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>32</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+         <!-- ==================== Gewehr 98 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_gewehr98_cwm</defName>
+    <label>Gewehr 98</label>
+    <description>The Gewehr 98 (abbreviated G98, Gew 98 or M98) is a German bolt-action Mauser rifle firing cartridges from a 5-round internal clip-loaded magazine that was the German service rifle from 1898 to 1945, when it was replaced by the Karabiner 98k.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_gewehr98</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <SightsEfficiency>0.5</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>2.87</SwayFactor>
+      <Bulk>12.50</Bulk>
+      <Mass>4.1</Mass>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>40</Steel>
+	  <WoodLog>20</WoodLog>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_792x51mmMauser_FMJ</projectileDef>
+                <warmupTime>0.5</warmupTime>
+                <range>70</range>
+                <soundCast>Shotgewehr98</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>5</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_792x51mmMauser</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+       <!-- ==================== MG 42 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_mg42_cwm</defName>
+    <label>MG 42</label>
+    <description>The MG 42 is a 7.92×57mm Mauser general purpose machine gun designed in Nazi Germany and used extensively by the Wehrmacht and the Waffen-SS during the second half of World War II.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_mg42</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>875</MarketValue>
+      <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>2.97</SwayFactor>
+      <Bulk>8.20</Bulk>
+      <Mass>7.57</Mass>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+		</weaponTags>
+	<costList>
+	  <Steel>100</Steel>
+	  <Component>2</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.30</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_792x51mmMauser_FMJ</projectileDef>
+				<burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                <warmupTime>1.3</warmupTime>
+                <range>70</range>
+                <soundCast>Shotmg42</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>50</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_792x51mmMauser</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>5</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>SuppressFire</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   
+</ThingDefs> 

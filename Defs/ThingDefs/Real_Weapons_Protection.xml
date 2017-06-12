@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  
+   <!--=============== DShKM ===============-->
+
+  <ThingDef ParentName="TurretMannedCraftableBase">
+    <defName>Gun_dshkm_def</defName>
+    <label>DShKM</label>
+    <graphicData>
+      <texPath>Things/Building/Turrets/MachineGunBase</texPath>
+    </graphicData>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>27500</WorkToMake>
+      <Mass>18.5</Mass>
+      <Bulk>22</Bulk>
+    </statBases>
+    <description>DShKM heavy machine gun mounted on a tripod.</description>
+    <costList>
+      <Steel>250</Steel>
+      <Component>4</Component>
+    </costList>
+    <building>
+      <turretGunDef>Gun_dshkm_cwm</turretGunDef>
+      <turretTopgraphicPath>Things/Defense/Gun_dshkm</turretTopgraphicPath>
+    </building>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+  </ThingDef>
+  
+  <!--=============== M2 Browning ===============-->
+
+  <ThingDef ParentName="TurretMannedCraftableBase">
+    <defName>Gun_m2_def</defName>
+    <label>M2 Browning</label>
+    <graphicData>
+      <texPath>Things/Building/Turrets/MachineGunBase</texPath>
+    </graphicData>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>18.5</Mass>
+      <Bulk>22</Bulk>
+    </statBases>
+    <description>M2 Browning heavy machine gun mounted on a tripod.</description>
+    <costList>
+      <Steel>225</Steel>
+      <Component>4</Component>
+    </costList>
+    <building>
+      <turretGunDef>Gun_m2_cwm</turretGunDef>
+      <turretTopgraphicPath>Things/Defense/Gun_m2</turretTopgraphicPath>
+    </building>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+  </ThingDef>
+  
+   <!--=============== SPG-9 ===============-->
+
+  <ThingDef ParentName="TurretMannedCraftableBase">
+    <defName>Gun_spg9_def</defName>
+    <label>SPG-9</label>
+    <graphicData>
+      <texPath>Things/Building/Turrets/MachineGunBase</texPath>
+    </graphicData>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>32000</WorkToMake>
+      <Mass>18.5</Mass>
+      <Bulk>22</Bulk>
+    </statBases>
+    <description>M2 Browning heavy machine gun mounted on a tripod.</description>
+    <costList>
+      <Steel>200</Steel>
+      <Component>5</Component>
+    </costList>
+    <building>
+      <turretGunDef>Gun_spg9_cwm</turretGunDef>
+      <turretTopgraphicPath>Things/Defense/Gun_spg9</turretTopgraphicPath>
+    </building>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+  </ThingDef>
+  
+  <!-- ============================================================== -->
+  
+  
+</ThingDefs>

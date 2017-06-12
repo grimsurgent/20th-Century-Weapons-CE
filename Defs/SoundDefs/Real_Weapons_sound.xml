@@ -1,0 +1,2526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-SoundDef>
+
+ 
+
+  <SoundDef>
+    <defName>Shotm27</defName>
+    <eventNames />
+	       <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m27</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm16a1</defName>
+    <eventNames />
+	       <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m16a1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotsg550</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>sg550</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotl85a2</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>l85a2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+    <SoundDef>
+    <defName>Shotsteyraug</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>steyraug</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+    <SoundDef>
+    <defName>Shotminimi</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>minimi</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+    <SoundDef>
+    <defName>Shotscarl</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>scarl</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+    <SoundDef>
+    <defName>Shotm249</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m249</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+    <SoundDef>
+    <defName>Shotm416</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m416</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotg36a1</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>g36a1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm4a2</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m4a2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotf2000</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>f2000</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotfamas</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>famas</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotxm8</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>xm8</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotak74</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ak74</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+  <SoundDef>
+    <defName>Shotaks74</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>aks74</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotan94</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>an94</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotaek971</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>aek971</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotaks74u</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>aks74u</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotak107</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ak107</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotakm</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>akm</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotaks</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>aks</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotak104</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ak104</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotfal</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>fal</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotgalil52</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>galil52</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotscarh</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>scarh</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotvintorez</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>vintorez</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+ <SoundDef>
+    <defName>Shotval</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>val</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shotvsk94</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>vsk94</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+  <SoundDef>
+    <defName>Shotsvu</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>svu</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotsv98</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>sv98</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotsvd</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>svd</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotwinchester70</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>winchester70</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotl96a1</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>l96a1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+  <SoundDef>
+    <defName>Shotsr25</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>sr25</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotg3a3</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>g3a3</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm60e3</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m60e3</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+  <SoundDef>
+    <defName>Shotm240b</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m240b</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotpecheneg</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>pecheneg</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+  <SoundDef>
+    <defName>Shotpkm</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>pkm</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotmp5a2</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>mp5a2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotmp5sd</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>mp5sd</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotuzi</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>uzi</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotpp19</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>pp19</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm1014</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m1014</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotsaiga12</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>saiga12</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935</min>
+          <max>1.255</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotdao12</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>dao12</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.7356</min>
+          <max>0.9553</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotjackhammer</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>jackhammer</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotusas12</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>usas12</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotaa12</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>aa12</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotremington870</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>remington870</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>70</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.63</min>
+          <max>0.755</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotspas12</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>spas12</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>70</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotrpg7</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>rpg7</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40</min>
+          <max>55</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Exploderpg7</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Exploderpg7</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>75</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotmosin</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>mosin</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotgewehr98</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>gewehr98</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotmg42</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>mg42</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm93r</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m93r</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotsks</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>sks</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotp90</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>p90</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm9</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m9</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm1911</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m1911</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+  <SoundDef>
+    <defName>Shotmagnum44</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>magnum44</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotr700</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>r700</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm40a3</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m40a3</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm39</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m39</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm14</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m14</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.735690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Explode40mm</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Explode40mm</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>75</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm32</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m32</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>50</min>
+          <max>65</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>1.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Explode84mm</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Explode84mm</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>80</min>
+          <max>85</max>
+        </volumeRange>
+        <pitchRange>
+          <min>1.835690</min>
+          <max>1.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotc7a1</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>c7a1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotcarlgustafm2</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>carlgustafm2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.735690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotscorpionvz68</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>scorpionvz68</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotdeserteagle</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>deserteagle</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotump</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ump</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotfrf2</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>frf2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotsteyrscout</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>steyrscout</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.555345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotm79</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m79</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>50</min>
+          <max>65</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>1.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotmg3</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>mg3</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>1.555345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shottar21</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>tar21</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotpsg1</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>psg1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotrpk74</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>rpk74</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9</min>
+          <max>1.1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Explodeprozshmel</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Explodeprozshmel</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>80</min>
+          <max>85</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.735690</min>
+          <max>0.855345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shot_prozshmel</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>prozshmel</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9</min>
+          <max>1.1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shot_qbz95b</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>qbz95b</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>50</min>
+          <max>70</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9</min>
+          <max>1.111</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shot_dshkm</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>dshkm</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>80</min>
+          <max>81</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.7</min>
+          <max>0.8</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shot_spg9</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>spg9</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>80</min>
+          <max>81</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.7</min>
+          <max>0.8</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Explodespg9</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Explodespg9</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>75</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.835690</min>
+          <max>0.955345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shot_coltmustang</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>7</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>coltmustang</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>80</min>
+          <max>90</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.735690</min>
+          <max>0.855345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotmp40</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>mp40</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotak5</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ak5</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotmossberg500a</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>mossberg500a</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotsig516</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>sig516</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shottompson</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>tompson</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotppsh</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ppsh</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <SoundDef>
+    <defName>Shotwinmodel1887</defName>
+    <eventNames />
+		   <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>winmodel1887</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.935690</min>
+          <max>1.055345</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+   <SoundDef>
+    <defName>Shot_m2browning</defName>
+    <eventNames />
+	       <context>MapOnly</context>
+           <maxVoices>4</maxVoices>
+           <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>m2browning</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>80</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9</min>
+          <max>1.0</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</DefPackage-SoundDef>

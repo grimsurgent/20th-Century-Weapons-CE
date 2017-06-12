@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RecipeDefs>
+
+   <!-- =============M16A1============== -->
+
+   <RecipeDef>
+    <defName>Gun_m16a1_cwm</defName>
+    <label>Make M16A1</label>
+    <description>Make M16A1.</description>
+    <jobString>Making M16A1</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>	
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>40000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_m16a1_cwm>1</Gun_m16a1_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>60</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>8</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============M4A2============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_m4a2_cwm</defName>
+    <label>Make M4A2</label>
+    <description>Make M4A2.</description>
+    <jobString>Making M4A2</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>	
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>46000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_m4a2_cwm>1</Gun_m4a2_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>65</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>8</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============SIG SG 516 CQB============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_sig516_cwm</defName>
+    <label>Make SIG SG 516 CQB</label>
+    <description>Make SIG SG 516 CQB.</description>
+    <jobString>Making SIG SG 516 CQB</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>35000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_sig516_cwm>1</Gun_sig516_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>70</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>9</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============TAR-21============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_tar21_cwm</defName>
+    <label>Make TAR-21</label>
+    <description>Make TAR-21.</description>
+    <jobString>Making TAR-21</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>47000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_tar21_cwm>1</Gun_tar21_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>68</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>9</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============QBZ-95B============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_qbz95b_cwm</defName>
+    <label>Make QBZ-95B</label>
+    <description>Make QBZ-95B.</description>
+    <jobString>Making QBZ-95B</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>43000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_qbz95b_cwm>1</Gun_qbz95b_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>66</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>9</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+   
+   <!-- =============M14============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_m14_cwm</defName>
+    <label>Make M14</label>
+    <description>Make M14.</description>
+    <jobString>Making M14</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>39000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_m14_cwm>1</Gun_m14_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>80</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+		    <li>WoodLog</li>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>10</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+   
+   <!-- =============G3A3============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_g3a3_cwm</defName>
+    <label>Make G3A3</label>
+    <description>Make G3A3.</description>
+    <jobString>Making G3A3</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>49000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_g3a3_cwm>1</Gun_g3a3_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>90</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>10</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+   
+   
+   
+   <!-- =============Galil ACE 52============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_galil52_cwm</defName>
+    <label>Make Galil ACE 52</label>
+    <description>Make Galil ACE 52.</description>
+    <jobString>Making Galil ACE 52</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>47000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_galil52_cwm>1</Gun_galil52_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>90</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>10</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+ 
+   <!-- =============M79============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_m79_cwm</defName>
+    <label>Make M79</label>
+    <description>Make M79.</description>
+    <jobString>Making M79</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>35000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_m79_cwm>1</Gun_m79_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>70</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>30</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+		    <li>WoodLog</li>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>10</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+   
+   <!-- =============Steyr Scout============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_steyrscout_cwm</defName>
+    <label>Make Steyr Scout</label>
+    <description>Make Steyr Scout.</description>
+    <jobString>Making Steyr Scout</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>42000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_steyrscout_cwm>1</Gun_steyrscout_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>90</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>10</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+
+
+
+
+
+
+  
+</RecipeDefs>

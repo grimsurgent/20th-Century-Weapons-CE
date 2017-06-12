@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RecipeDefs>
+
+   <!-- =============Mossberg 500A============== -->
+
+   <RecipeDef>
+    <defName>Gun_mossberg500a_cwm</defName>
+    <label>Make Mossberg 500A</label>
+    <description>Make Mossberg 500A.</description>
+    <jobString>Making Mossberg 500A</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>	
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>30000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_mossberg500a_cwm>1</Gun_mossberg500a_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>5</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============Winchester Model 1887============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_winmodel1887_cwm</defName>
+    <label>Make Winchester Model 1887</label>
+    <description>Make Winchester Model 1887.</description>
+    <jobString>Making Winchester Model 1887</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>20000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_winmodel1887_cwm>1</Gun_winmodel1887_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>45</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>5</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============M1014============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_m1014_cwm</defName>
+    <label>Make M1014</label>
+    <description>Make M1014.</description>
+    <jobString>Making M1014</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>31000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_m1014_cwm>1</Gun_m1014_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>60</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>6</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============SAIGA 12K============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_saiga12_cwm</defName>
+    <label>Make SAIGA 12K</label>
+    <description>Make SAIGA 12K.</description>
+    <jobString>Making SAIGA 12K</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>31000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_saiga12_cwm>1</Gun_saiga12_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>60</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>4</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  
+  
+</RecipeDefs>

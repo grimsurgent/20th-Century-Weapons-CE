@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BaseMeleeWeapon" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <SellPriceFactor>0.75</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Melee</li>
+    </weaponTags>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+  </ThingDef> 
+  
+  
+  <!-- ============================================================== -->
+
+  
+  <ThingDef ParentName="BaseMeleeWeapon">
+    <defName>hunting_knife</defName>
+    <label>Hunting Knife</label>
+    <description>Hunting knife</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/hunting_knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+       <weaponTags>
+         <li>CE_Sidearm_Melee</li>
+         <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tradeability>Sellable</tradeability>
+     <statBases>
+	 <MarketValue>120</MarketValue>       
+     <MeleeWeapon_DamageAmount>10</MeleeWeapon_DamageAmount>
+     <DeteriorationRate>0.1</DeteriorationRate>
+     <MeleeWeapon_Cooldown>1.25</MeleeWeapon_Cooldown>
+     <Flammability>0</Flammability>
+     </statBases>
+     <equippedAngleOffset>-25</equippedAngleOffset>
+     <verbs>
+     <li>
+     <verbClass>Verb_MeleeAttack</verbClass>
+     <hasStandardCommand>true</hasStandardCommand>
+     <meleeDamageDef>Cut</meleeDamageDef>
+     </li>
+     </verbs>
+     </ThingDef>
+	 
+	 
+	 <ThingDef ParentName="BaseMeleeWeapon">
+    <defName>machete</defName>
+    <label>Machete</label>
+    <description>Machete</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/machete</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+       <weaponTags>
+         <li>CE_Sidearm_Melee</li>
+         <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tradeability>Sellable</tradeability>
+     <statBases>
+	 <MarketValue>230</MarketValue>       
+     <MeleeWeapon_DamageAmount>13</MeleeWeapon_DamageAmount>
+     <DeteriorationRate>0.1</DeteriorationRate>
+     <MeleeWeapon_Cooldown>2.0</MeleeWeapon_Cooldown>
+     <Flammability>0</Flammability>
+     </statBases>
+     <equippedAngleOffset>-25</equippedAngleOffset>
+     <verbs>
+     <li>
+     <verbClass>Verb_MeleeAttack</verbClass>
+     <hasStandardCommand>true</hasStandardCommand>
+     <meleeDamageDef>Cut</meleeDamageDef>
+     </li>
+     </verbs>
+     </ThingDef>
+
+
+ <ThingDef ParentName="BaseMeleeWeapon">
+    <defName>wrench</defName>
+    <label>Wrench</label>
+    <description>Wrench.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/wrench</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+      <weaponTags>
+         <li>CE_Sidearm_Melee</li>
+         <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <tradeability>Sellable</tradeability>
+     <statBases>
+     <MarketValue>150</MarketValue>       
+     <MeleeWeapon_DamageAmount>9</MeleeWeapon_DamageAmount>
+     <DeteriorationRate>0.1</DeteriorationRate>
+     <MeleeWeapon_Cooldown>2</MeleeWeapon_Cooldown>
+     <Flammability>0</Flammability>
+	 </statBases>
+     <equippedAngleOffset>-25</equippedAngleOffset>
+     <verbs>
+     <li>
+     <verbClass>Verb_MeleeAttack</verbClass>
+     <hasStandardCommand>true</hasStandardCommand>
+     <meleeDamageDef>Blunt</meleeDamageDef>
+     </li>
+     </verbs>
+	 <equippedStatOffsets>
+      <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+    </equippedStatOffsets>
+     </ThingDef>
+	 
+
+</ThingDefs>

@@ -1,0 +1,2150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+
+   <ThingDef Name="BaseGunWest" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicData>
+		  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <DeteriorationRate>2</DeteriorationRate>
+		  <SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+		  <li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li>
+			<compClass>CompEquippable</compClass>
+		  </li>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>ArtName_WeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+	  </ThingDef>
+
+	  <ThingDef Name="BaseMakeableGunWest" ParentName="BaseGunWest" Abstract="True">
+		<recipeMaker>
+		  <workSpeedStat>SmithingSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>TableMachining</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	  </ThingDef>
+
+
+	  <ThingDef Name="BaseHumanGunWest" ParentName="BaseGunWest" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+	  
+	  <ThingDef Name="BaseHumanMakeableGunWest" ParentName="BaseMakeableGunWest" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+
+
+<!-- ==================== M27 IAR ========================== -->
+
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m27_cwm</defName>
+    <label>M27 IAR</label>
+    <description>The M27 Infantry Automatic Rifle (IAR) features a heavier, longer barrel and an extended magazine to enable greater amounts of suppressive fire while retaining some of the mobility of a standard M416.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m27</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>950</MarketValue>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.10</ShotSpread>
+      <SwayFactor>1.50</SwayFactor>
+      <Bulk>10.50</Bulk>
+      <Mass>3.80</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+		<costList>
+	  <Steel>110</Steel>
+	  <Component>2</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.80</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>8</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<warmupTime>1.4</warmupTime>
+				<range>75</range>
+				<soundCast>Shotm27</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>40</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	  	<aimedBurstShotCount>4</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  
+  <!-- ==================== M16A1 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m16a1_cwm</defName>
+    <label>M16A1</label>
+    <description>In 1964, the M16 entered American military service and the following year was deployed for jungle warfare operations during the Vietnam War. In 1969, the M16A1 replaced the M14 rifle to become the U.S. military's standard service rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m16a1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>600</MarketValue>
+      <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.30</SwayFactor>
+      <Bulk>9.50</Bulk>
+      <Mass>3.2</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+	  <Steel>75</Steel>
+	  <Component>1</Component>
+	</costList>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.10</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<warmupTime>1.1</warmupTime>
+				<range>70</range>
+                <soundCast>Shotm16a1</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	  	<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+    <!-- ==================== C7A1 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_c7a1_cwm</defName>
+    <label>C7A1</label>
+    <description>The Colt Canada C7 rifle is a Canadian assault rifle, manufactured by Colt Canada, a variant of the Armalite AR-15, and having similar design and function to the Colt M16A3.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_c7a1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>700</MarketValue>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.30</SwayFactor>
+      <Bulk>10.20</Bulk>
+      <Mass>3.3</Mass>
+      <RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+	  <Steel>80</Steel>
+	  <Component>2</Component>
+	</costList>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+     <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.00</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>75</range>
+                <soundCast>Shotc7a1</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	  	<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== SG 550 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_sg550_cwm</defName>
+    <label>SG 550</label>
+    <description>The SG 550 is an assault rifle manufactured by Swiss Arms AG of Neuhausen, Switzerland.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_sg550</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>700</MarketValue>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.35</SwayFactor>
+      <Bulk>8.00</Bulk>
+      <Mass>4.10</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+	  <Steel>80</Steel>
+	  <Component>2</Component>
+	</costList>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.20</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>72</range>
+                <soundCast>Shotsg550</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	  	<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== L85A2 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_l85a2_cwm</defName>
+    <label>L85A2</label>
+    <description>Part of the SA80 family, the L85 is the standard assault rifle of the British armed forces.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_l85a2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>760</MarketValue>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.35</SwayFactor>
+      <Bulk>7.70</Bulk>
+      <Mass>4.10</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+       <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.84</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.3</warmupTime>
+                <range>75</range>
+                <soundCast>Shotl85a2</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>2</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== Steyr AUG ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_steyraug_cwm</defName>
+    <label>Steyr AUG</label>
+    <description>Since its adoption as the standard rifle of the Austrian army in 1977, it has seen great success as an export, with a high number of global users praising its ruggedness and excellent handling.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_steyraug</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>760</MarketValue>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.40</SwayFactor>
+      <Bulk>7.90</Bulk>
+      <Mass>3.6</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.86</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.4</warmupTime>
+                <range>75</range>
+                <soundCast>Shotsteyraug</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== Mk.16 SCAR-L ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_scarl_cwm</defName>
+    <label>Mk.16 SCAR-L</label>
+    <description>Compared to its 20 round carbine counterpart, the heavier Mk. 17, the SCAR-L provides greater target acquisition at longer ranges due to the extended barrel length as well as more controlled fire due to manageable recoil.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_scarl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>710</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.20</SwayFactor>
+      <Bulk>8.90</Bulk>
+      <Mass>4.10</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.0</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>73</range>
+                <soundCast>Shotscarl</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== M416 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m416_cwm</defName>
+    <label>M416</label>
+    <description>The M416 was developed by a famous German weapons manufacturer as a more reliable version of the classic M16.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m416</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>700</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.20</SwayFactor>
+      <Bulk>9.00</Bulk>
+      <Mass>3.49</Mass>
+      <RangedWeapon_Cooldown>0.68</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>80</Steel>
+	  <Component>2</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.1</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>73</range>
+                <soundCast>Shotm416</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== G36A1 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_g36a1_cwm</defName>
+    <label>G36A1</label>
+    <description>The G36 is a 5.56×45mm assault rifle, designed in the early 1990s by Heckler and Koch in Germany as a replacement for the heavier 7.62mm G3 battle rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_g36a1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>740</MarketValue>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.10</SwayFactor>
+      <Bulk>10.02</Bulk>
+      <Mass>4.10</Mass>
+      <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.9</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.3</warmupTime>
+                <range>75</range>
+                <soundCast>Shotg36a1</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== M4A1 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m4a2_cwm</defName>
+    <label>M4A1</label>
+    <description>Visually and mechanically similar to the M16, the M4 Carbine was developed to replace pistols and sub-machine guns at the front lines.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m4a2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>550</MarketValue>
+      <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.10</ShotSpread>
+      <SwayFactor>1.50</SwayFactor>
+      <Bulk>8.40</Bulk>
+      <Mass>4.10</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>60</Steel>
+	  <Component>1</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.7</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.0</warmupTime>
+                <range>68</range>
+                <soundCast>Shotm4a2</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	  	<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== FN F2000 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_f2000_cwm</defName>
+    <label>FN F2000</label>
+    <description>A Belgian manufactured bullpup Assault Rifle configured in the Tactical setup with top and forward rails for mounting a variety of accessories. The rifle is in use with a variety of Special Forces units.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_f2000</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>720</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.30</SwayFactor>
+      <Bulk>6.90</Bulk>
+      <Mass>4.10</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.3</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>69</range>
+                <soundCast>Shotf2000</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	  	<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== FAMAS G2 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_famas_cwm</defName>
+    <label>FAMAS G2</label>
+    <description>Standard service rifle of the French military.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_famas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>700</MarketValue>
+      <SightsEfficiency>0.63</SightsEfficiency>
+      <ShotSpread>0.087</ShotSpread>
+      <SwayFactor>1.34</SwayFactor>
+      <Bulk>7.72</Bulk>
+      <Mass>3.80</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.1</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>71</range>
+                <soundCast>Shotfamas</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== TAR-21 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_tar21_cwm</defName>
+    <label>TAR-21</label>
+    <description>The Tavor is an Israeli bullpup assault rifle chambered for 5.56×45mm NATO ammunition with a selective fire system, selecting between semi-automatic mode and full automatic fire mode.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_tar21</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>670</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.40</SwayFactor>
+      <Bulk>7.25</Bulk>
+      <Mass>3.27</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>80</Steel>
+	  <Component>2</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.1</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>70</range>
+                <soundCast>Shottar21</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== XM8 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_xm8_cwm</defName>
+    <label>XM8</label>
+    <description>The rifle was designed by German small arms manufacturer Heckler and Koch , and shares design and engineering with their G36 rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_xm8</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>750</MarketValue>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.14</SwayFactor>
+      <Bulk>8.38</Bulk>
+      <Mass>3.40</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.2</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>73</range>
+                <soundCast>Shotxm8</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== QBZ-95B ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_qbz95b_cwm</defName>
+    <label>QBZ-95B</label>
+    <description>Standard service rifle of the Chinese armed forces.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_qbz95b</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <SightsEfficiency>0.30</SightsEfficiency>
+      <ShotSpread>0.10</ShotSpread>
+      <SwayFactor>1.50</SwayFactor>
+      <Bulk>6.09</Bulk>
+      <Mass>2.90</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+	  <Steel>70</Steel>
+	  <Component>1</Component>
+	</costList>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.6</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>0.8</warmupTime>
+                <range>67</range>
+                <soundCast>Shot_qbz95b</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== M249 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m249_cwm</defName>
+    <label>M249</label>
+    <description>The M249 has seen action in every major conflict since the 1989 invasion of Panama and has earned a reputation as a reliable weapon. A single M249 can supply suppressive fire equivalent to 15 riflemen.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m249</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>950</MarketValue>
+      <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.23</ShotSpread>
+      <SwayFactor>2.46</SwayFactor>
+      <Bulk>8.04</Bulk>
+      <Mass>6.85</Mass>
+      <RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+		</weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.39</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>1.3</warmupTime>
+                <range>95</range>
+                <soundCast>Shotm249</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>7</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>200</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>5</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>SuppressFire</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== FN Minimi ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_minimi_cwm</defName>
+    <label>FN Minimi</label>
+    <description>The Minimi(short for French: Mini Mitrailleuse; "mini machine gun") is a Belgian 5.56mm light machine gun developed by Fabrique Nationale (FN) in Herstal by Ernest Vervier. First introduced in 1974, it is now in service in more than 75 countries.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_minimi</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>950</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.19</ShotSpread>
+      <SwayFactor>2.13</SwayFactor>
+      <Bulk>8.15</Bulk>
+      <Mass>8.40</Mass>
+      <RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+		</weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.36</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>95</range>
+                <soundCast>Shotminimi</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>7</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>200</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>5</aimedBurstShotCount>
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>SuppressFire</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== Steyr Scout ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_steyrscout_cwm</defName>
+    <label>Steyr Scout</label>
+    <description>It is intended to fill the role of a versatile, lightMass all-around rifle as specified in Jeff Cooper's scout rifle concept.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_steyrscout</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>852</MarketValue>
+      <SightsEfficiency>1.12</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>1.74</SwayFactor>
+      <Bulk>10.39</Bulk>
+      <Mass>3.5</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+	<costList>
+	  <Steel>80</Steel>
+	  <Component>2</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+                <warmupTime>0.5</warmupTime>
+                <range>87</range>
+                <soundCast>Shotsteyrscout</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- =============SIG SG 516 CQB============== -->
+   
+   <ThingDef ParentName="BaseHumanGunWest">
+    <defName>Gun_sig516_cwm</defName>
+    <label>SIG SG 516 CQB</label>
+    <description>The SIG 516 is a firearm manufactured by SIG Sauer. The rifle is based on the earlier 5.56×45mm NATO AR-15 and the M16.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_sig516</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>550</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.10</ShotSpread>
+      <SwayFactor>1.14</SwayFactor>
+      <Bulk>3.38</Bulk>
+      <Mass>2.40</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+   <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.5</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>0.8</warmupTime>
+                <range>55</range>
+                <soundCast>Shotsig516</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+   <!-- ==================== FN FAL ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_fal_cwm</defName>
+    <label>FN FAL</label>
+    <description>The Fusil Automatique Léger ("Light Automatic Rifle") or FAL is a semi-automatic/selective fire battle rifle produced by the Belgian armaments manufacturer Fabrique Nationale de Herstal (FN).</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_fal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.50</SwayFactor>
+      <Bulk>10.90</Bulk>
+      <Mass>4.45</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+	<costList>
+	  <Steel>90</Steel>
+	  <Component>2</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.70</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>73</range>
+                <soundCast>Shotfal</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== Mk.17 SCAR-H ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_scarh_cwm</defName>
+    <label>Mk.17 SCAR-H</label>
+    <description>This family of rifles consist of two main types. The SCAR-L, for "light", is chambered in the 5.56×45mm NATO cartridge and the SCAR-H, for "heavy", fires 7.62×51mm NATO.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_scarh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.30</SwayFactor>
+      <Bulk>9.97</Bulk>
+      <Mass>3.86</Mass>
+      <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.90</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>74</range>
+                <soundCast>Shotscarh</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== Galil ACE 52 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_galil52_cwm</defName>
+    <label>Galil ACE 52</label>
+    <description>The Galil ACE is an Israeli assault rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_galil52</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>750</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.80</SwayFactor>
+      <Bulk>9.63</Bulk>
+      <Mass>3.69</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>90</Steel>
+	  <Component>3</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.80</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>0.7</warmupTime>
+                <range>73</range>
+                <soundCast>Shotgalil52</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>25</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== M14 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m14_cwm</defName>
+    <label>M14</label>
+    <description>M14 rifle, officially the United States Rifle, 7.62 mm, M14, is an American selective fire automatic rifle that fires 7.62×51mm NATO (.308 Winchester) ammunition.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m14</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>735</MarketValue>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.60</SwayFactor>
+      <Bulk>11.20</Bulk>
+      <Mass>5.1</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>60</Steel>
+	  <Component>1</Component>
+	  <WoodLog>30</WoodLog>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.60</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+                <warmupTime>0.5</warmupTime>
+                <range>73</range>
+                <soundCast>Shotm14</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== SR-25 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_sr25_cwm</defName>
+    <label>SR-25</label>
+    <description>The SR-25 (Stoner Rifle-25) is a designated marksman rifle designed by Eugene Stoner and manufactured by Knight's Armament Company.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_sr25</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>910</MarketValue>
+      <SightsEfficiency>1.10</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>1.87</SwayFactor>
+      <Bulk>12.00</Bulk>
+      <Mass>7.26</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+                <warmupTime>1.2</warmupTime>
+                <range>94</range>
+                <soundCast>Shotsr25</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>4</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== M39 EMR ========================== -->
+  
+  <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m39_cwm</defName>
+    <label>M39 EMR</label>
+    <description>The M39 Enhanced Marksman Rifle (EMR) is a highly modernized M14 designed to be utilized by USMC designated marksmen.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m39</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>920</MarketValue>
+      <SightsEfficiency>1.20</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>2.00</SwayFactor>
+      <Bulk>11.00</Bulk>
+      <Mass>7.50</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+                <warmupTime>1.1</warmupTime>
+                <range>100</range>
+                <soundCast>Shotm39</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>4</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== G3A3 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_g3a3_cwm</defName>
+    <label>G3A3</label>
+    <description>The G3 is a 7.62×51mm NATO battle rifle developed in the 1950s.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_g3a3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>810</MarketValue>
+      <SightsEfficiency>0.62</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.55</SwayFactor>
+      <Bulk>10.25</Bulk>
+      <Mass>4.40</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>90</Steel>
+	  <Component>2</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.90</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>73</range>
+                <soundCast>Shotg3a3</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== M60E3 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m60e3_cwm</defName>
+    <label>M60E3</label>
+    <description>The M60, officially the United States Machine Gun, Caliber 7.62 mm, M60, is a family of American general-purpose machine guns firing 7.62×51mm NATO.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m60e3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>950</MarketValue>
+      <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.22</ShotSpread>
+      <SwayFactor>3.00</SwayFactor>
+      <Bulk>8.77</Bulk>
+      <Mass>8.50</Mass>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+		</weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.35</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>93</range>
+                <soundCast>Shotm60e3</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>100</magazineSize>
+		<reloadTime>5</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>5</aimedBurstShotCount>
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>SuppressFire</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== M240B ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m240b_cwm</defName>
+    <label>M240B</label>
+    <description>The M240 is a General Purpose Machine Gun (GPMG) that was first developed in Belgium and adopted by the USMC in 1991. The M60 was replaced first by the M240G, and subsequently by the M240B which provides commonality between the Marines and the US Army.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m240b</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1050</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.19</ShotSpread>
+      <SwayFactor>2.60</SwayFactor>
+      <Bulk>8.32</Bulk>
+      <Mass>8.3</Mass>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+		</weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.35</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>105</range>
+                <soundCast>Shotm240b</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>200</magazineSize>
+		<reloadTime>5</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>5</aimedBurstShotCount>
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>SuppressFire</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== MG 3 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_mg3_cwm</defName>
+    <label>MG 3</label>
+    <description>The MG 3 is a German general-purpose machine gun chambered for the 7.62×51mm NATO cartridge. The weapon's design is derived from the World War II era MG 42 universal machine gun that fired the 7.92×57mm Mauser round.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_mg3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1050</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>2.94</SwayFactor>
+      <Bulk>8.25</Bulk>
+      <Mass>8.5</Mass>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.30</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+				<burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>105</range>
+                <soundCast>Shotmg3</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>100</magazineSize>
+		<reloadTime>5</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>5</aimedBurstShotCount>
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>SuppressFire</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- =============Ak 5C============== -->
+  
+   <ThingDef ParentName="BaseHumanGunWest">
+    <defName>Gun_ak5_cwm</defName>
+    <label>Ak 5C</label>
+    <description>The Ak 5 is the Swedish version of the FN FNC assault rifle with certain modifications, mostly to adapt the weapon to the subarctic Swedish climate.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_ak5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>680</MarketValue>
+      <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.10</SwayFactor>
+      <Bulk>5.40</Bulk>
+      <Mass>3.10</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.6</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.0</warmupTime>
+                <range>68</range>
+                <soundCast>Shotak5</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	  	<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== Winchester Model 70 ========================== -->
+ 
+ <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_winchester70_cwm</defName>
+    <label>Winchester Model 70</label>
+    <description>The Winchester Model 70 is a bolt-action sporting rifle. It has an iconic place in American sporting culture and has been held in high regard by shooters since it was introduced in 1936, earning the moniker "The Rifleman's Rifle".</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_winchester70</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>950</MarketValue>
+	  <SightsEfficiency>1.25</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>2.63</SwayFactor>
+      <Bulk>10.20</Bulk>
+      <Mass>3.6</Mass>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+                <warmupTime>1.1</warmupTime>
+                <range>105</range>
+                <soundCast>Shotwinchester70</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>5</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== Remington 700 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_r700_cwm</defName>
+    <label>Remington 700</label>
+    <description>The Remington Model 700 is a series of bolt-action rifles manufactured by Remington Arms since 1962.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_r700</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>950</MarketValue>
+      <SightsEfficiency>1.27</SightsEfficiency>
+      <ShotSpread>0.03</ShotSpread>
+      <SwayFactor>2.29</SwayFactor>
+      <Bulk>10.55</Bulk>
+      <Mass>3.4</Mass>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+                <warmupTime>1.2</warmupTime>
+                <range>105</range>
+                <soundCast>Shotr700</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>4</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== M40A3 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m40a3_cwm</defName>
+    <label>M40A3</label>
+    <description>The M40 rifle is a bolt-action sniper rifle used by the United States Marine Corps.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m40a3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <SightsEfficiency>1.25</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
+      <SwayFactor>2.00</SwayFactor>
+      <Bulk>11.24</Bulk>
+      <Mass>7.5</Mass>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+                <warmupTime>1.1</warmupTime>
+                <range>110</range>
+                <soundCast>Shotm40a3</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>5</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== L96A1 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_l96a1_cmw</defName>
+    <label>L96A1</label>
+    <description>British made, high performance sniper rifle. Widely used across Europe.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_l96a1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1300</MarketValue>
+      <SightsEfficiency>1.50</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
+      <SwayFactor>2.43</SwayFactor>
+      <Bulk>11.94</Bulk>
+      <Mass>6.8</Mass>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_338Lapua_FMJ</projectileDef>
+                <warmupTime>1.3</warmupTime>
+                <range>113</range>
+                <soundCast>Shotl96a1</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_338Lapua</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== FR F2 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_frf2_cmw</defName>
+    <label>FR F2</label>
+    <description>The FR F2 is the standard sniper rifle of the French military. It is designed for shooting at point targets at distances up to 800 meters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_frf2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1070</MarketValue>
+      <SightsEfficiency>1.37</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
+      <SwayFactor>2.04</SwayFactor>
+      <Bulk>12.00</Bulk>
+      <Mass>5.3</Mass>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+                <warmupTime>1.3</warmupTime>
+                <range>110</range>
+                <soundCast>Shotfrf2</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== HK PSG1 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_psg1_cmw</defName>
+    <label>HK PSG1</label>
+    <description>The PSG1 is a semi-automatic sniper rifle designed by the German company Heckler and Koch of Oberndorf am Neckar.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_psg1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1150</MarketValue>
+      <SightsEfficiency>1.42</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>2.12</SwayFactor>
+      <Bulk>12.30</Bulk>
+      <Mass>7.39</Mass>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+                <warmupTime>1.2</warmupTime>
+                <range>108</range>
+                <soundCast>Shotpsg1</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>5</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== M32 Milkor ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m32_cwm</defName>
+    <label>M32 Milkor</label>
+    <description>The Milkor MGL (Multiple Grenade Launcher) is a lightMass 40 mm six-shot revolver-type grenade launcher developed and manufactured in South Africa.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m32</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1450</MarketValue>
+	  <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.16</ShotSpread>
+      <SwayFactor>3.00</SwayFactor>
+      <Bulk>6.78</Bulk>
+      <Mass>5.3</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_40x46mmGrenade_HE</projectileDef>
+                <warmupTime>1.0</warmupTime>
+                <range>55</range>
+                <soundCast>Shotm32</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>6</magazineSize>
+		<reloadTime>5</reloadTime>
+		<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<noSingleShot>true</noSingleShot>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== M79 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGunWest">
+    <defName>Gun_m79_cwm</defName>
+    <label>M79</label>
+    <description>The M79 grenade launcher is a single-shot, shoulder-fired, break-action grenade launcher that fires a 40×46mm grenade, which uses what the US Army calls the High-Low Propulsion System to keep recoil forces low, and first appeared during the Vietnam War. Because of its distinctive report, it has earned the nicknames of "Thumper", "Thump-Gun", "Bloop Tube", and "Blooper" among American soldiers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m79</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>700</MarketValue>
+	  <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.16</ShotSpread>
+      <SwayFactor>3.00</SwayFactor>
+      <Bulk>4.78</Bulk>
+      <Mass>4.3</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_40x46mmGrenade_HE</projectileDef>
+                <warmupTime>1.0</warmupTime>
+                <range>44</range>
+                <soundCast>Shotm79</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>1</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<noSingleShot>true</noSingleShot>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+        <!-- ==================== Carl Gustaf M2 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_carl_gustaf_m2_cwm</defName>
+    <label>Carl Gustaf M2</label>
+    <description>The Carl Gustaf is an 84 mm man-portable reusable anti-tank recoilless rifle produced by Saab Bofors Dynamics (formerly Bofors Anti-Armour AB) in Sweden.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_carl_gustaf_m2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1450</MarketValue>
+      <SightsEfficiency>1.10</SightsEfficiency>
+      <ShotSpread>0.2</ShotSpread>
+      <SwayFactor>3.00</SwayFactor>
+      <Bulk>8.65</Bulk>
+      <Mass>8.5</Mass>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_84x246mmR_HEAT</projectileDef>
+                <warmupTime>3.0</warmupTime>
+                <range>65</range>
+                <soundCast>Shotcarlgustafm2</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>1</magazineSize>
+		<reloadTime>5</reloadTime>
+		<ammoSet>AmmoSet_84x246mmR</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+		<noSingleShot>true</noSingleShot>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   
+</ThingDefs> 

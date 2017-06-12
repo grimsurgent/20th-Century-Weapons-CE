@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RecipeDefs>
+
+   <!-- =============Beretta 92============== -->
+
+   <RecipeDef>
+    <defName>Gun_m9_cwm</defName>
+    <label>Make Beretta 92</label>
+    <description>Make Beretta 92.</description>
+    <jobString>Making Beretta 92</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>	
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>16000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_m9_cwm>1</Gun_m9_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>30</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>2</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============Colt Mustang============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_coltmustang_cwm</defName>
+    <label>Make Colt Mustang</label>
+    <description>Make Colt Mustang.</description>
+    <jobString>Making Colt Mustang</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>15000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_coltmustang_cwm>1</Gun_coltmustang_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>25</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>2</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============M1911============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_m1911_cwm</defName>
+    <label>Make M1911</label>
+    <description>Make M1911.</description>
+    <jobString>Making M1911</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>15000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_m1911_cwm>1</Gun_m1911_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>35</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>3</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============Desert Eagle============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_deserteagle_cwm</defName>
+    <label>Make Desert Eagle</label>
+    <description>Make Desert Eagle.</description>
+    <jobString>Making Desert Eagle</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>20000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_deserteagle_cwm>1</Gun_deserteagle_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>40</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>4</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+  
+  <!-- =============.44 Magnum============== -->  
+  
+   <RecipeDef>
+    <defName>Gun_magnum44_cwm</defName>
+    <label>Make .44 Magnum</label>
+    <description>Make .44 Magnum.</description>
+    <jobString>Making .44 Magnum</jobString>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workAmount>20000</workAmount>
+	<workSkill>Crafting</workSkill>
+    <products>
+        <Gun_magnum44_cwm>1</Gun_magnum44_cwm>
+    </products>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>40</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Component</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+    </ingredients>
+	<fixedIngredientFilter>
+         <thingDefs>
+            <li>Steel</li>
+			<li>Component</li>
+         </thingDefs>
+    </fixedIngredientFilter>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+	<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>4</minLevel>
+		</li>
+	</skillRequirements>
+   </RecipeDef>
+ 
+
+
+
+
+
+
+  
+</RecipeDefs>

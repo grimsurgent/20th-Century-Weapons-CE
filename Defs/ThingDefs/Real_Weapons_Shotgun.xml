@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+   <ThingDef Name="BaseGunShotgun" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicData>
+		  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <DeteriorationRate>1</DeteriorationRate>
+		  <SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+		  <li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li>
+			<compClass>CompEquippable</compClass>
+		  </li>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>ArtName_WeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+	  </ThingDef>
+
+	  <ThingDef Name="BaseMakeableGunShotgun" ParentName="BaseGunShotgun" Abstract="True">
+		<recipeMaker>
+		  <workSpeedStat>SmithingSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>TableMachining</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	  </ThingDef>
+
+
+	  <ThingDef Name="BaseHumanGunShotgun" ParentName="BaseGunShotgun" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+	  
+	  <ThingDef Name="BaseHumanMakeableGunShotgun" ParentName="BaseMakeableGunShotgun" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+
+   <!-- ==================== M1014 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m1014_cwm</defName>
+    <label>M1014</label>
+    <description>An Italian Semi-Automatic Shotgun, delivered to USMC in 1999, the M1014 fires 12 gauge rounds without the need for the pump action seen on the M870.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m1014</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <ShotSpread>0.10</ShotSpread>
+	  <SwayFactor>0.50</SwayFactor>
+	  <Bulk>6.10</Bulk>
+	  <Mass>3.80</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+	<costList>
+      <Steel>70</Steel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.4</warmupTime>
+        <range>25</range>
+        <soundCast>Shotm1014</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>6</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+  </ThingDef>
+   
+   <!-- ==================== SAIGA 12K ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_saiga12_cwm</defName>
+    <label>SAIGA 12K</label>
+    <description>This Russian made magazine fed 12 gauge Shotgun is based on the proven AK-47 action and equipped with a folding stock.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_saiga12</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>470</MarketValue>
+      <ShotSpread>0.18</ShotSpread>
+	  <SwayFactor>0.60</SwayFactor>
+	  <Bulk>5.10</Bulk>
+	  <Mass>3.50</Mass>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+	<costList>
+      <Steel>70</Steel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.4</warmupTime>
+        <range>25</range>
+        <soundCast>Shotsaiga12</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>8</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+  </ThingDef>
+   
+   <!-- ==================== DAO-12 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_dao12_cwm</defName>
+    <label>DAO-12</label>
+    <description>Оriginally developed in South Africa, the DAO-12 is essentially the combination of a revolver and a Shotgun.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_dao12</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>520</MarketValue>
+      <ShotSpread>0.15</ShotSpread>
+	  <SwayFactor>0.84</SwayFactor>
+	  <Bulk>5.00</Bulk>
+	  <Mass>4.20</Mass>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.4</warmupTime>
+        <range>23</range>
+        <soundCast>Shotdao12</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>12</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+  </ThingDef>
+   
+   <!-- ==================== MK3A1 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_jackhammer_cwm</defName>
+    <label>MK3A1</label>
+    <description>The MK3A1 (AKA Jackhammer) is a fully automatic Shotgun prototype developed in the US.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_jackhammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>537</MarketValue>
+      <ShotSpread>0.19</ShotSpread>
+	  <SwayFactor>0.73</SwayFactor>
+	  <Bulk>6.62</Bulk>
+	  <Mass>4.57</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.4</warmupTime>
+        <range>26</range>
+        <soundCast>Shotjackhammer</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+		<recoilPattern>Regular</recoilPattern>
+		<recoilAmount>0.51</recoilAmount>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+  </ThingDef>
+   
+   <!-- ==================== USAS-12 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_usas12_cwm</defName>
+    <label>USAS-12</label>
+    <description>A South Korean produced Automatic Shotgun, the USAS-12 was specifically developed for the combat Shotgun role.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_usas12</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>535</MarketValue>
+      <ShotSpread>0.17</ShotSpread>
+	  <SwayFactor>0.79</SwayFactor>
+	  <Bulk>5.60</Bulk>
+	  <Mass>6.2</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.3</warmupTime>
+        <range>23</range>
+        <soundCast>Shotusas12</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+  </ThingDef>
+   
+   <!-- ==================== AA12 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_aa12_cwm</defName>
+    <label>AA12</label>
+    <description>The Auto Assault-12 (AA-12), originally designed and known as the Atchisson Assault Shotgun, is a shotgun developed in 1972 by Maxwell Atchisson.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_aa12</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>510</MarketValue>
+      <ShotSpread>0.13</ShotSpread>
+	  <SwayFactor>0.89</SwayFactor>
+	  <Bulk>5.65</Bulk>
+	  <Mass>5.0</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.35</warmupTime>
+        <range>23</range>
+        <soundCast>Shotaa12</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>8</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+  </ThingDef>
+   
+   <!-- ==================== Remington 870 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_remington870_cwm</defName>
+    <label>Remington 870</label>
+    <description>The M870 is an American made Pump-Action Shotgun that has been used by Special Forces units for decades.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_remington870</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <ShotSpread>0.12</ShotSpread>
+	  <SwayFactor>0.34</SwayFactor>
+	  <Bulk>5.60</Bulk>
+	  <Mass>3.6</Mass>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+	<costList>
+      <Steel>70</Steel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.35</warmupTime>
+        <range>25</range>
+        <soundCast>Shotremington870</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>8</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+  </ThingDef>
+   
+   <!-- ==================== SPAS-12 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_spas12_cwm</defName>
+    <label>SPAS-12</label>
+    <description>This Italian made iconic shotgun has seen great success since its introduction on the market during the 1980s.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_spas12</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>470</MarketValue>
+      <ShotSpread>0.13</ShotSpread>
+	  <SwayFactor>0.43</SwayFactor>
+	  <Bulk>5.41</Bulk>
+	  <Mass>4.4</Mass>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+	<costList>
+      <Steel>70</Steel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.3</warmupTime>
+        <range>25</range>
+        <soundCast>Shotspas12</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>8</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+  </ThingDef>
+  
+   <!-- =============Mossberg 500A============== -->
+   
+   <ThingDef ParentName="BaseHumanGunShotgun">
+    <defName>Gun_mossberg500a_cwm</defName>
+    <label>Mossberg 500A</label>
+    <description>Intended for use in harsh and dirty conditions, such as waterfowl hunting or combat, the Model 500 series is designed to be easy to clean and maintain.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_mossberg500a</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+     <statBases>
+      <MarketValue>450</MarketValue>
+      <ShotSpread>0.17</ShotSpread>
+	  <SwayFactor>0.43</SwayFactor>
+	  <Bulk>5.41</Bulk>
+	  <Mass>4.4</Mass>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.3</warmupTime>
+        <range>22</range>
+        <soundCast>Shotmossberg500a</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>8</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- =============Winchester Model 1887============== -->
+   
+   <ThingDef ParentName="BaseHumanGunShotgun">
+    <defName>Gun_winmodel1887_cwm</defName>
+    <label>Winchester Model 1887</label>
+    <description>The Winchester Model 1887 are lever-action shotgun originally designed by famed American gun designer John Browning and produced by the Winchester Repeating Arms Company during the late 19th and early 20th centuries.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_winmodel1887</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+   <statBases>
+      <MarketValue>400</MarketValue>
+      <ShotSpread>0.24</ShotSpread>
+	  <SwayFactor>0.43</SwayFactor>
+	  <Bulk>4.41</Bulk>
+	  <Mass>3.4</Mass>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Shotgun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_12Gauge_Buck</projectileDef>
+        <warmupTime>0.3</warmupTime>
+        <range>25</range>
+        <soundCast>Shotwinmodel1887</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>4</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_12Gauge</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   
+</ThingDefs> 

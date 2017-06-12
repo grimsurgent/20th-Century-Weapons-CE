@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+   <ThingDef Name="BaseGunEast" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicData>
+		  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <DeteriorationRate>1</DeteriorationRate>
+		  <SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+		  <li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li>
+			<compClass>CompEquippable</compClass>
+		  </li>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>ArtName_WeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+	  </ThingDef>
+
+	  <ThingDef Name="BaseMakeableGunEast" ParentName="BaseGunEast" Abstract="True">
+		<recipeMaker>
+		  <workSpeedStat>SmithingSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>TableMachining</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	  </ThingDef>
+
+
+	  <ThingDef Name="BaseHumanGunEast" ParentName="BaseGunEast" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+	  
+	  <ThingDef Name="BaseHumanMakeableGunEast" ParentName="BaseMakeableGunEast" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+	  
+<!-- =============East Weapons============== -->
+	  
+    <!-- ==================== AK74 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_ak74_cwm</defName>
+    <label>AK74</label>
+    <description>Fielded as the standard Assault Rifle by the Russian Army. The AK-74 is a reliable and rugged medium range weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_ak74</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>600</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.40</SwayFactor>
+      <Bulk>9.40</Bulk>
+      <Mass>3.30</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>60</Steel>
+	  <Component>1</Component>
+	  <WoodLog>25</WoodLog>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.70</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_545x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>70</range>
+                <soundCast>Shotak74</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== RPK74 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_rpk74_cwm</defName>
+    <label>RPK74</label>
+    <description>Introduced in 1974 together with the AK-74 assault rifle and chambered for the new 5.45×39mm high-velocity cartridge.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_rpk74</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>790</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.50</SwayFactor>
+      <Bulk>10.60</Bulk>
+      <Mass>5.00</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+	<costList>
+	  <Steel>70</Steel>
+	  <Component>1</Component>
+	  <WoodLog>25</WoodLog>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.65</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_545x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>73</range>
+                <soundCast>Shotrpk74</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>45</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>4</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== AKS74 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_aks74_cwm</defName>
+    <label>AKS74</label>
+    <description>Fielded as the standard Assault Rifle by the Russian Army. The AK-74 is a reliable and rugged medium range weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_aks74</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>600</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.40</SwayFactor>
+      <Bulk>9.40</Bulk>
+      <Mass>3.20</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>60</Steel>
+	  <Component>1</Component>
+	  <WoodLog>25</WoodLog>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.70</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_545x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>70</range>
+                <soundCast>Shotaks74</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== AN-94 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_an94_cwm</defName>
+    <label>AN-94</label>
+    <description>Compared to the standard AK series, the AN-94 requires a significantly higher degree of training. A skilled shooter can effectively engage targets at a longer range than typical Assault Rifles.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_an94</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.02</ShotSpread>
+      <SwayFactor>1.00</SwayFactor>
+      <Bulk>9.43</Bulk>
+      <Mass>3.90</Mass>
+      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.80</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_545x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>2</burstShotCount>
+                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>73</range>
+                <soundCast>Shotan94</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== AEK-971 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_aek971_cwm</defName>
+    <label>AEK-971</label>
+    <description>The AEK-971 was developed as a possible successor to the AK-74 series of Assault Rifles and features a unique recoil reduction system.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_aek971</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>780</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>1.60</SwayFactor>
+      <Bulk>9.60</Bulk>
+      <Mass>3.53</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.70</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_545x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>71</range>
+                <soundCast>Shotaek971</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== AKS74u ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_aks74u_cwm</defName>
+    <label>AKS74u</label>
+    <description>Derived from the AKS-74, the AKS-74u is a shortened Carbine with the power of a rifle cartridge but the size of a submachine gun.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_aks74u</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>485</MarketValue>
+      <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.70</SwayFactor>
+      <Bulk>7.30</Bulk>
+      <Mass>2.70</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Carbines</li>
+    </weaponTags>
+	<costList>
+	  <Steel>45</Steel>
+	  <Component>1</Component>
+	  <WoodLog>15</WoodLog>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.60</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_545x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.0</warmupTime>
+                <range>67</range>
+                <soundCast>Shotaks74u</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== AK107 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_ak107_cwm</defName>
+    <label>AK107</label>
+    <description>The AK-107 is a Russian 5.45×39mm assault rifle developed from the AK-100-series.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_ak107</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>650</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>1.50</SwayFactor>
+      <Bulk>9.43</Bulk>
+      <Mass>3.80</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.60</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_545x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>73</range>
+                <soundCast>Shotak107</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== AKM ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_akm_cwm</defName>
+    <label>AKM</label>
+    <description>The AKM is a 7.62mm assault rifle designed by Mikhail Kalashnikov. It is a common modernized variant of the AK-47 rifle developed in the 1940s.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_akm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>550</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.10</SwayFactor>
+      <Bulk>8.80</Bulk>
+      <Mass>3.10</Mass>
+      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>68</Steel>
+	  <Component>3</Component>
+	  <WoodLog>30</WoodLog>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.40</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>70</range>
+                <soundCast>Shotakm</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+  <!-- ==================== AKMS ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_aks_cwm</defName>
+    <label>AKMS</label>
+    <description>The main variant of the AKM is the AKMS (S – Skladnoy – Folding), which was equipped with an under-folding metal shoulder stock in place of the fixed wooden stock.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_aks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>690</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.10</ShotSpread>
+      <SwayFactor>1.90</SwayFactor>
+      <Bulk>8.80</Bulk>
+      <Mass>3.30</Mass>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Rifles</li>
+    </weaponTags>
+	<costList>
+	  <Steel>68</Steel>
+	  <Component>2</Component>
+	  <WoodLog>30</WoodLog>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.50</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>70</range>
+                <soundCast>Shotaks</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== AK104 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_ak104_cwm</defName>
+    <label>AK104</label>
+    <description>The AK-104 is a shortened carbine version of the AK-103 rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_ak104</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>640</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.70</SwayFactor>
+      <Bulk>8.24</Bulk>
+      <Mass>3.20</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Carbines</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.55</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>0.65</warmupTime>
+                <range>65</range>
+                <soundCast>Shotak104</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== SKS ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_sks_cwm</defName>
+    <label>SKS</label>
+    <description>Millions of SKS rifles were produced originally for the Soviet Army in 1945 and in China as the Type 56. The SKS is a popular rifle with civilian shooters, and can still be found in a number of arsenals around the world.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_sks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>630</MarketValue>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.42</SwayFactor>
+      <Bulk>10.22</Bulk>
+      <Mass>3.86</Mass>
+      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Carbines</li>
+    </weaponTags>
+	<costList>
+	  <Steel>65</Steel>
+	  <Component>1</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.55</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x39mmSoviet_FMJ</projectileDef>
+                <warmupTime>0.6</warmupTime>
+                <range>80</range>
+                <soundCast>Shotsks</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== SVU ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_svu_cwm</defName>
+    <label>SVU</label>
+    <description>The OTs-03 SVU is a bullpup configuration of the SVD sniper rifle. The SVU was developed to meet the needs of the security forces of the Russian Ministry of Internal Affairs, such as OMON. The SVU was first seen in use in the First Chechen War.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_svu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <SightsEfficiency>1.20</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>2.50</SwayFactor>
+      <Bulk>9.80</Bulk>
+      <Mass>5.9</Mass>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+                <warmupTime>1.3</warmupTime>
+                <range>100</range>
+                <soundCast>Shotsvu</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_762x54mmR</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== SV98 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_sv98_cwm</defName>
+    <label>SV98</label>
+    <description>Similar to its Western counter parts, the SV-98 began life as a proven Bolt-Action sporting rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_sv98</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <SightsEfficiency>1.31</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
+      <SwayFactor>2.00</SwayFactor>
+      <Bulk>12.70</Bulk>
+      <Mass>6.2</Mass>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+                <warmupTime>1.2</warmupTime>
+                <range>109</range>
+                <soundCast>Shotsv98</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_762x54mmR</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== SVD ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_svd_cwm</defName>
+    <label>SVD</label>
+    <description>Designed as a squad support weapon, the SVD Dragunov enhances a squad's ability by providing long range, rapid, accurate Semi-Automatic fire.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_svd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+	  <MarketValue>850</MarketValue>
+      <SightsEfficiency>1.20</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>2.30</SwayFactor>
+      <Bulk>12.25</Bulk>
+      <Mass>4.5</Mass>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+                <warmupTime>1.3</warmupTime>
+                <range>107</range>
+                <soundCast>Shotsvd</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_762x54mmR</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+  <!-- ==================== PKP PECHENEG ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_pecheneg_cwm</defName>
+    <label>PKP PECHENEG</label>
+    <description>Another Modernization of a traditional Russian weapon, the PKP Pecheneg replaces the PKM machine gun in service with Spetsnaz units.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_pecheneg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>930</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.21</ShotSpread>
+      <SwayFactor>2.71</SwayFactor>
+      <Bulk>8.55</Bulk>
+      <Mass>8.2</Mass>
+      <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+		</weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.40</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+				<burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>85</range>
+                <soundCast>Shotpecheneg</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>100</magazineSize>
+		<reloadTime>5</reloadTime>
+		<ammoSet>AmmoSet_762x54mmR</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>5</aimedBurstShotCount>
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>SuppressFire</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== PKM ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_pkm_cmw</defName>
+    <label>PKM</label>
+    <description>The PK, is a 7.62 mm general-purpose machine gun designed in the Soviet Union and currently in production in Russia.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_pkm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>850</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.24</ShotSpread>
+      <SwayFactor>2.76</SwayFactor>
+      <Bulk>9.92</Bulk>
+      <Mass>7.5</Mass>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+		</weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.40</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+				<burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>85</range>
+                <soundCast>Shotpkm</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>100</magazineSize>
+		<reloadTime>5</reloadTime>
+		<ammoSet>AmmoSet_762x54mmR</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>5</aimedBurstShotCount>
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>SuppressFire</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   	<!-- ==================== RPG-7 ==================== -->
+	
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>gun_rpg_cwm</defName>
+		<label>RPG-7</label>
+		<description>A short rocket-propelled grenade launcher that fires single projectiles which explode on impact. A relatively very cheap, multiple use alternative to single-shot launchers.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Gun_rpg7</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<statBases>
+			<WorkToMake>22000</WorkToMake>
+			<MarketValue>1400</MarketValue>
+			<SightsEfficiency>0.77</SightsEfficiency>
+			<ShotSpread>0.2</ShotSpread>
+			<SwayFactor>1.68</SwayFactor>
+			<Bulk>9.50</Bulk>
+			<Mass>7.00</Mass>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>100</Steel>
+			<Component>6</Component>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_RPG7Grenade_HEAT</projectileDef>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>2</warmupTime>
+				<range>50</range>
+				<minrange>5</minrange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+        <soundCast>Shotrpg7</soundCast>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>6</reloadTime>
+				<ammoSet>AmmoSet_RPG7Grenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	     <!-- ==================== VSS Vintorez ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_vintorez_cwm</defName>
+    <label>VSS Vintorez</label>
+    <description>The VSS, also called the Vintorez, is a suppressed sniper rifle that uses a heavy subsonic 9×39mm SP5 cartridge and armor-piercing SP6 cartridge.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_vintorez</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <SightsEfficiency>1.15</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
+      <SwayFactor>1.59</SwayFactor>
+      <Bulk>8.94</Bulk>
+      <Mass>4.3</Mass>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.80</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x39mmSoviet_FMJ</projectileDef>
+                <warmupTime>1.1</warmupTime>
+                <range>80</range>
+                <soundCast>Shotvintorez</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>2</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_9x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+     <!-- ==================== AS VAL ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_val_cwm</defName>
+    <label>AS VAL</label>
+    <description>The AS VAL is an integrally suppressed Soviet designed Assault Rifle developed for use in the Spetsnaz.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_val</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.50</SwayFactor>
+      <Bulk>8.75</Bulk>
+      <Mass>2.7</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.77</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x39mmSoviet_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>63</range>
+                <soundCast>Shotval</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>2</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_9x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+	    <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== VSK-94 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_vsk94_cwm</defName>
+    <label>VSK-94</label>
+    <description>The VSK-94 is a 9 mm suppressed sniper rifle developed by the Russia KBP Instrument Design Bureau as a low-cost alternative to the VSS rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_vsk94</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <SightsEfficiency>1.10</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>1.78</SwayFactor>
+      <Bulk>9.32</Bulk>
+      <Mass>3.1</Mass>
+      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.80</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x39mmSoviet_FMJ</projectileDef>
+                <warmupTime>1.2</warmupTime>
+                <range>86</range>
+                <soundCast>Shotvsk94</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>2</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>4</reloadTime>
+		<ammoSet>AmmoSet_9x39mmSoviet</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aiUseBurstMode>FALSE</aiUseBurstMode>
+		<aiAimMode>AimedShot</aiAimMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+  
+</ThingDefs> 

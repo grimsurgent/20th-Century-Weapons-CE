@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+   <ThingDef Name="BaseGunPDW" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicData>
+		  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <DeteriorationRate>1</DeteriorationRate>
+		  <SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+		  <li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li>
+			<compClass>CompEquippable</compClass>
+		  </li>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>ArtName_WeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+	  </ThingDef>
+
+	  <ThingDef Name="BaseMakeableGunPDW" ParentName="BaseGunPDW" Abstract="True">
+		<recipeMaker>
+		  <workSpeedStat>SmithingSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>TableMachining</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	  </ThingDef>
+
+
+	  <ThingDef Name="BaseHumanGunPDW" ParentName="BaseGunPDW" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+	  
+	  <ThingDef Name="BaseHumanMakeableGunPDW" ParentName="BaseMakeableGunPDW" Abstract="True">
+		<weaponTags>
+		  <li>Gun</li>
+		</weaponTags>
+	  </ThingDef>
+	  
+	  
+    <!-- ==================== MP5А2 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_mp5a2_cwm</defName>
+    <label>MP5А2</label>
+    <description>Is a 9mm submachine gun of German design, developed in the 1960s.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_mp5a2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.11</ShotSpread>
+      <SwayFactor>0.91</SwayFactor>
+      <Bulk>6.80</Bulk>
+      <Mass>2.71</Mass>
+      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>pdw</li>
+    </weaponTags>
+	<costList>
+      <Steel>40</Steel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.3</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>0.55</warmupTime>
+                <range>45</range>
+                <soundCast>Shotmp5a2</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== MP5SD ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_mp5sd_cwm</defName>
+    <label>MP5SD</label>
+    <description>A special version of the famous SMG for quiet operations with redesigned balanced mechanics and muffler. Exclusive intermediate weapon for scouts.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_mp5sd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.11</ShotSpread>
+      <SwayFactor>0.91</SwayFactor>
+      <Bulk>7.90</Bulk>
+      <Mass>3.2</Mass>
+      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>40</Steel>
+    </costList>
+    <weaponTags>
+      <li>pdw</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.3</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>0.55</warmupTime>
+                <range>45</range>
+                <soundCast>Shotmp5sd</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== UZI Carbine ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_uzi_cwm</defName>
+    <label>UZI Carbine</label>
+    <description>The Uzi has found use as a personal defense weapon by rear-echelon troops, officers, artillery troops and tankers, as well as a frontline weapon by elite light infantry assault forces.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_uzi</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <SightsEfficiency>0.40</SightsEfficiency>
+      <ShotSpread>0.12</ShotSpread>
+      <SwayFactor>1.0</SwayFactor>
+      <Bulk>6.50</Bulk>
+      <Mass>3.6</Mass>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>40</Steel>
+    </costList>
+    <weaponTags>
+      <li>CE_SMG</li>
+	  <li>CE_AI_AssaultWeapon</li>
+	  <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.3</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>0.55</warmupTime>
+                <range>43</range>
+                <soundCast>Shotuzi</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>40</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+  
+  <!-- ==================== PP-19 ========================== -->
+  
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_pp19_cwm</defName>
+    <label>PP-19</label>
+    <description>Submachine gun developed in Russia, featuring a helical high capacity magazine.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_pp19</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>550</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.15</ShotSpread>
+      <SwayFactor>0.9</SwayFactor>
+      <Bulk>7.50</Bulk>
+      <Mass>3.2</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>40</Steel>
+    </costList>
+    <weaponTags>
+      <li>CE_SMG</li>
+	  <li>CE_AI_AssaultWeapon</li>
+	  <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.4</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>0.6</warmupTime>
+                <range>45</range>
+                <soundCast>Shotpp19</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>64</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== Beretta 93R ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_m93r_cwm</defName>
+    <label>Beretta 93R</label>
+    <description>A modified version of the M9 pistol, the 93R is able to fire in 3 Round Bursts.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_m93r</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <SightsEfficiency>0.30</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>1.4</SwayFactor>
+      <Bulk>2.40</Bulk>
+      <Mass>1.17</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>40</Steel>
+    </costList>
+    <weaponTags>
+      <li>CE_SMG</li>
+	  <li>CE_AI_AssaultWeapon</li>
+	  <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.3</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <warmupTime>0.50</warmupTime>
+                <range>37</range>
+                <soundCast>Shotm93r</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== Scorpion Vz.68 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_scorpionvz68_cwm</defName>
+    <label>Scorpion Vz.68</label>
+    <description>Although it was developed for use with security forces and special forces, the weapon was also accepted into service with the Czechoslovak Army, as a personal sidearm for lower-ranking army staff, vehicle drivers, armoured vehicle personnel and special forces.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_scorpionvz68</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <SightsEfficiency>0.30</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>1.0</SwayFactor>
+      <Bulk>2.70</Bulk>
+      <Mass>2.00</Mass>
+      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>40</Steel>
+    </costList>
+    <weaponTags>
+      <li>CE_SMG</li>
+	  <li>CE_AI_AssaultWeapon</li>
+	  <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.4</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
+				<burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <warmupTime>0.50</warmupTime>
+                <range>38</range>
+                <soundCast>Shotscorpionvz68</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>20</magazineSize>
+		<reloadTime>2</reloadTime>
+		<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   <!-- ==================== HK UMP ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_ump_cwm</defName>
+    <label>HK UMP</label>
+    <description>The UMP is a submachine gun developed and manufactured by Heckler and Koch.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_ump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>520</MarketValue>
+      <SightsEfficiency>0.50</SightsEfficiency>
+      <ShotSpread>0.14</ShotSpread>
+      <SwayFactor>0.98</SwayFactor>
+      <Bulk>6.92</Bulk>
+      <Mass>2.45</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>40</Steel>
+    </costList>
+    <weaponTags>
+      <li>CE_SMG</li>
+	  <li>CE_AI_AssaultWeapon</li>
+	  <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>0.6</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_45ACP_FMJ</projectileDef>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>0.6</warmupTime>
+                <range>48</range>
+                <soundCast>Shotump</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>30</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_45ACP</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+       <!-- ==================== FN P90 ========================== -->
+   
+   <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_p90_cwm</defName>
+    <label>FN P90</label>
+    <description>Developed in Belgium as a Personal Defense Weapon for vehicle crews, Special Forces and Counter-Terrorist groups the P90 is a compact and capable weapon system.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_p90</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>715</MarketValue>
+      <SightsEfficiency>0.60</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.40</SwayFactor>
+      <Bulk>5.00</Bulk>
+      <Mass>2.78</Mass>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>CE_SMG</li>
+	  <li>CE_AI_AssaultWeapon</li>
+	  <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+	<costList>
+	  <Steel>60</Steel>
+	  <Component>2</Component>
+	</costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+	            <recoilPattern>Regular</recoilPattern>
+				<recoilAmount>1.0</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_FN57x28mm_FMJ</projectileDef>
+				<burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>1.0</warmupTime>
+                <range>53</range>
+                <soundCast>Shotp90</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+	    <magazineSize>50</magazineSize>
+		<reloadTime>3</reloadTime>
+		<ammoSet>AmmoSet_FN57x28mm</ammoSet>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_FireModes">
+		<aimedBurstShotCount>4</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+	  </li>
+	</comps>
+   </ThingDef>
+   
+   
+</ThingDefs> 
